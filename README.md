@@ -1,6 +1,6 @@
 # Vue 3 + i18n + Typescript + Vite + Storybook + ESLint + Prettier
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+Starter template using Vue3, Vite, Typescript and Storybook.
 The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
 ## Create stories with Typescript
