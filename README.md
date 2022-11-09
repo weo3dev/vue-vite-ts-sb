@@ -7,11 +7,6 @@ The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs]
 
 You can write stories with JavaScript or Typescript alike as both your dev server and storybook server allow it. Start writing stories with [this introduction](https://storybook.js.org/docs/react/writing-stories/introduction)
 
-## Add translations to locales files
-
-Translations are ready to go with [vue-i18](https://vue-i18n.intlify.dev/)
-Add your files to `/locales` and are you are set.
-
 ## ESLint
 
 Change your config at `.eslintrc.js`
@@ -65,13 +60,8 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 │   │       └── overpass-regular.otf
 │   ├── components
 │   │   ├── HelloWorld.vue
-│   │   └── LocaleSelect.vue
 │   ├── data
 │   │   └── links.json
-│   ├── locales
-│   │   ├── en.json
-│   │   ├── pt.json
-│   │   └── zh.json
 │   ├── main.ts
 │   ├── shims-vue.d.ts
 │   ├── stories

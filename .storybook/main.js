@@ -1,7 +1,5 @@
 const { loadConfigFromFile, mergeConfig } = require("vite");
 
-const vueI18n = require("@intlify/vite-plugin-vue-i18n").default;
-
 const eslintPlugin = require("vite-plugin-eslint").default;
 
 const path = require("path");
@@ -28,14 +26,7 @@ module.exports = {
     );
     return mergeConfig(previousConfig, {
       ...config,
-      plugins: [
-        vueI18n({
-          include: path.resolve(__dirname, "../src/locales/**"),
-          compositionOnly: false,
-          runtimeOnly: false,
-        }),
-        eslintPlugin(),
-      ],
+      plugins: [eslintPlugin()],
     });
   },
 };

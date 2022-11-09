@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import HelloWorld from "./components/HelloWorld.vue";
-import LocaleSelect from "./components/LocaleSelect.vue";
 import links from "@/data/links.json";
 
 const { t } = useI18n();
@@ -12,13 +11,7 @@ const getImgURL = (src: string) => {
 </script>
 
 <template>
-  <locale-select></locale-select>
-  <a
-    v-for="{ alt, src, href } in links"
-    :key="alt"
-    class="logo-link"
-    :href="href"
-  >
+  <a v-for="{ alt, src, href } in links" :key="alt" class="logo-link" :href="href">
     <img class="logo" :alt="alt" :src="getImgURL(src)" />
   </a>
   <HelloWorld :msg="t('welcome')" />
@@ -60,7 +53,7 @@ body {
     background: darken(color(dark), 5%);
   }
 
-  & + .logo-link {
+  &+.logo-link {
     margin-left: 16px;
   }
 }
